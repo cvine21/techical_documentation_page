@@ -1,7 +1,9 @@
 body {
+	min-width: 290px;
 	margin: 0;
 	box-sizing: border-box;
 	line-height: 1.5;
+	font-family: 'Open Sans', Arial, sans-serif;
 }
 
 *, *::before, *::after {
@@ -9,18 +11,15 @@ body {
 }
 
 header {
-	font-family: 'Open Sans', Arial, sans-serif;
 	font-size: 1.8em;
 }
 
 #navbar {
 	position: fixed;
-	top: 0;
-	left: 0;
 	height: 100%;
 	min-width: 290px;
 	width: 300px;
-	border-right: solid rgba(0, 22, 22, 0.4);
+	border-right: solid rgba(41, 47, 47, 0.4);
 }
 
 #navbar header {
@@ -45,10 +44,10 @@ header {
 }
 
 #main-doc {
-	padding: 20px;
 	position: absolute;
 	margin-left: 310px;
 	margin-bottom: 110px;
+	padding: 20px;
 }
 
 @media (max-width: 815px) {
@@ -62,17 +61,16 @@ header {
 		position: absolute;
 		top: 0;
 		left: 0;
+		height: auto;
 		width: 100%;
-		border-right: 0;
 	}
 	
 	#navbar ul {
 		height: 207px;
-		overflow: auto;
 		border: solid #4d4e53;
+		overflow: auto;
 	}
 }
-
 
 section article {
 	margin: 15px;
@@ -85,7 +83,6 @@ article ul li {
 
 code {
 	display: block;
-	width: 100%;
 	background-color: #f7f7f7;
 	padding: 1em;
 	border-radius: 5px;
